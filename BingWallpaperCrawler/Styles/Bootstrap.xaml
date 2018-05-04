@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/BingWallpaperCrawler;component/Styles/Window.xaml"></ResourceDictionary>
+        <ResourceDictionary Source="pack://application:,,,/BingWallpaperCrawler;component/Styles/Label.xaml"></ResourceDictionary>
+        <ResourceDictionary Source="pack://application:,,,/BingWallpaperCrawler;component/Styles/Panel.xaml"></ResourceDictionary>
+        <ResourceDictionary Source="pack://application:,,,/BingWallpaperCrawler;component/Styles/Button.xaml"></ResourceDictionary>
+        <ResourceDictionary Source="pack://application:,,,/BingWallpaperCrawler;component/Styles/ProgressBar.xaml"></ResourceDictionary>
+        <ResourceDictionary Source="pack://application:,,,/BingWallpaperCrawler;component/Styles/FormControl.xaml"></ResourceDictionary>
+        <ResourceDictionary Source="pack://application:,,,/BingWallpaperCrawler;component/Styles/InputGroup.xaml"></ResourceDictionary>
+        <ResourceDictionary Source="pack://application:,,,/BingWallpaperCrawler;component/Styles/Path.xaml"></ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

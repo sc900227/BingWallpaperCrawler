@@ -1,0 +1,19 @@
+﻿<Application x:Class="BingWallpaperCrawler.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles\BaseStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Styles\Bootstrap.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Styles\Button.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Styles\Colors.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Styles\Fonts.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Styles\FormControl.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Styles\InputGroup.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Styles\Label.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

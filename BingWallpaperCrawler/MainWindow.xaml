@@ -1,0 +1,35 @@
+﻿<Window x:Class="BingWallpaperCrawler.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:my="clr-namespace:BingWallpaperCrawler.Control" 
+        Title="必应每日壁纸更新工具" Icon="/BingWallpaperCrawler;component/Images/bitbug_favicon.ico" Height="500" Width="800">
+    <Window.Resources>
+        
+    </Window.Resources>
+    <Grid>
+        <Button Content="开始抓取" Style="{DynamicResource btn-success}" HorizontalAlignment="Left" Margin="53,15,0,0" Name="btnStart" VerticalAlignment="Top" Click="btnStart_Click" />
+        <TextBox Height="108" Style="{StaticResource has-error}" IsReadOnly="True" HorizontalAlignment="Left" Margin="53,56,0,0" Padding="10,10,10,10" Name="txtMessage" TextWrapping="Wrap" VerticalScrollBarVisibility="Hidden" FontStyle="Normal" FontSize="16" Foreground="Red" FontWeight="Normal" Text="" FontFamily="宋体" VerticalAlignment="Top" Width="571" />
+        <Grid Height="280" HorizontalAlignment="Left" Margin="29,170,0,0" Name="gImageList" VerticalAlignment="Top" Width="620">
+            <my:ImageScrollView HorizontalAlignment="Center" x:Name="imageScrollView1" VerticalAlignment="Center" />
+            <!--<Grid.RowDefinitions>
+                <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition Height="200"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400"></ColumnDefinition>
+                <ColumnDefinition Width="400"></ColumnDefinition>
+                <ColumnDefinition Width="420*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>-->
+            
+
+        </Grid>
+        <Button Content="设置壁纸" Style="{DynamicResource btn-danger}" HorizontalAlignment="Left" Margin="542,16,0,0" Name="btnSet" VerticalAlignment="Top" Click="btnSet_Click" />
+        <TextBox  Style="{StaticResource has-success}" IsReadOnly="True" HorizontalAlignment="Left" Margin="141,16,0,0" Name="txtSavePath" VerticalAlignment="Top" Width="245" />
+        <Button Content="选择图片保存目录" Style="{DynamicResource btn-info}" HorizontalAlignment="Left" Margin="390,16,0,0" Name="btnSetFolder" VerticalAlignment="Top" Click="btnSetFolder_Click" />
+        <Button Content="一键下载" Style="{DynamicResource btn-primary}" HorizontalAlignment="Left" Margin="639,16,0,0" Name="btnDownAll" VerticalAlignment="Top" Click="btnDownAll_Click" />
+        <Button Content="启动循环" Style="{DynamicResource btn-warning}" HorizontalAlignment="Left" Margin="639,65,0,0" Name="btnStartCarousel" VerticalAlignment="Top" Height="40" FontSize="15" Click="btnStartCarousel_Click" />
+        <Button Content="取消循环" Style="{DynamicResource btn-warning}" Height="40" HorizontalAlignment="Left" Margin="639,115,0,0" Name="btnCancel" VerticalAlignment="Top" FontSize="15" Click="btnCancel_Click" />
+    </Grid>
+</Window>
