@@ -50,6 +50,7 @@ namespace BingWallpaperCrawler
                 var driver = new PhantomJSDriver(_service, _options);//实例化PhantomJS的WebDriver
                 try
                 {
+
                     var watch = DateTime.Now;
                     driver.Navigate().GoToUrl(uri.ToString());//请求URL地址
                     if (script != null) driver.ExecuteScript(script.Code, script.Args);//执行Javascript代码
